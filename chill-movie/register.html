@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
   <title>Register</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="auth-page register-bg">
 
 <div class="auth-overlay"></div>
 
 <div class="auth-card">
-  <div class="logo">
-    <img src="assets/logo.png">
+
+  <!-- logo -->
+  <img src="assets/Logo.png" class="logo-img">
+
+  <h2 class="auth-title">Daftar</h2>
+  <p class="auth-sub">Selamat datang!</p>
+
+  <!-- USERNAME -->
+  <label>Username</label>
+  <div class="form-group">
+    <input id="regUser" type="text" placeholder="Masukkan username">
   </div>
 
-  <div class="auth-title">Daftar</div>
-
+  <!-- PASSWORD -->
+  <label>Kata Sandi</label>
   <div class="form-group">
-    <input id="regUser" type="text" placeholder="Username">
-  </div>
-
-  <div class="form-group">
-    <input id="regPass" type="password" placeholder="Password">
+    <input id="regPass" type="password" placeholder="Masukkan kata sandi">
     <span class="toggle-password">👁️</span>
   </div>
 
+  <!-- CONFIRM -->
+  <label>Konfirmasi Kata Sandi</label>
   <div class="form-group">
-    <input id="regConfirm" type="password" placeholder="Konfirmasi Password">
+    <input id="regConfirm" type="password" placeholder="Masukkan kata sandi">
     <span class="toggle-password">👁️</span>
   </div>
 
+  <!-- LINK -->
   <div class="form-row">
-    <a href="login.html">Masuk</a>
+    <span>Sudah punya akun? <a href="login.html">Masuk</a></span>
   </div>
 
-  <button id="registerBtn" class="btn">Daftar</button>
+  <!-- BUTTON -->
+  <button id="registerBtn" class="btn btn-login">Daftar</button>
 
   <div class="divider">Atau</div>
 
+  <!-- GOOGLE -->
   <div class="btn-google">
-    <img src="assets/google.png"> Google
+    <img src="assets/google.png">
+    <span>Daftar dengan Google</span>
   </div>
+
 </div>
 
 <script src="js/script.js"></script>

@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
   <title>Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="auth-page login-bg">
 
 <div class="auth-overlay"></div>
 
 <div class="auth-card">
-  <div class="logo">
-    <img src="assets/logo.png">
+
+  <!-- logo pakai asset -->
+  <img src="assets/Logo.png" class="logo-img">
+
+  <h2 class="auth-title">Masuk</h2>
+  <p class="auth-sub">Selamat datang kembali!</p>
+
+  <label>Username</label>
+  <div class="form-group">
+    <input id="loginUser" type="text" placeholder="Masukkan username">
   </div>
 
-  <div class="auth-title">Masuk</div>
-  <div class="auth-sub">Selamat datang kembali!</div>
-
+  <label>Kata Sandi</label>
   <div class="form-group">
-    <input id="loginUser" type="text" placeholder="Username">
-  </div>
-
-  <div class="form-group">
-    <input id="loginPass" type="password" placeholder="Kata sandi">
+    <input id="loginPass" type="password" placeholder="Masukkan kata sandi">
     <span class="toggle-password">👁️</span>
   </div>
 
   <div class="form-row">
-    <a href="register.html">Daftar</a>
-    <a href="#">Lupa?</a>
+    <span>Belum punya akun? <a href="register.html">Daftar</a></span>
+    <a href="#">Lupa kata sandi?</a>
   </div>
 
-  <button id="loginBtn" class="btn">Masuk</button>
+  <button id="loginBtn" class="btn btn-login">Masuk</button>
 
   <div class="divider">Atau</div>
 
   <div class="btn-google">
-    <img src="assets/google.png"> Google
+    <img src="assets/google.png">
+    <span>Masuk dengan Google</span>
   </div>
+
 </div>
 
 <script src="js/script.js"></script>
